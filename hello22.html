@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohitflex Fitness </title>
+</head>
+<!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Balsamiq+Sans?query=bal"> -->
+<link rel="stylesheet" href="mohit.css">
+<style>
+    /* css reset  */
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* are use for background image  */
+        background: url("img/wp2563911-body-building-wallpaper.jpg");
+        height: 800px;
+    }
+
+    .left {
+        /* left box in left by display inline block position with property left + top and under folow*/
+        display: inline-block;
+        /* border: 2px solid gold; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 75px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+        /* text-decoration: solid; */
+    }
+
+    .mid {
+        /* mid box in mid for display block width margin and under folow  */
+
+        display: block;
+        width: 1000px;
+        margin: 12px auto;
+        /* border: 1px solid lavender; */
+    }
+
+    .right {
+        /* in this position are use for right box take to most right by give propert in right + top and under folow*/
+        position: absolute;
+        right: 5px;
+        top: 25px;
+        display: inline-block;
+        /* border: 2px solid maroon; */
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 12px;
+        border: 2px solid navy;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .btn:hover {
+        color: sandybrown;
+    }
+
+    .navbar {
+        /* in this are inline and width or height are also set  */
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        /* in this are inline and width or height are also set  */
+        font-size: 25px;
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.actice {
+        text-decoration: underline;
+        color: rosybrown;
+    }
+
+    .container {
+        border: 2px solid floralwhite;
+        margin: 106px 80px;
+        padding: 75px 60px;
+        width: 33%;
+        border-radius: 2px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box are use for loggo in this div  -->
+        <div class="left">
+            <img src="img/OIP (1).jpg" alt="">
+            <div>Mohitflex Fitness </div>
+        </div>
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Plan</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button  -->
+        <div class="right">
+            <input type="text" name="search" id="search" placeholder="search this web">
+            <button class="btn">Search Plan </button><button class="btn"> Select Catgory</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>join our gym to fit your health</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="" name="" placeholder="Enter your Location">
+            </div>
+            <div class="form-group">
+                <input type="" name="" placeholder="Enter your Email and Contact Number">
+            </div>
+            <button class="btn"> Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
